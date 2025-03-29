@@ -1,3 +1,108 @@
 body {
   background-image: linear-gradient(to right, wheat, yellow);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #5a3921;
+  border-bottom: 2px solid rgba(90, 57, 33, 0.3);
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+li span {
+  font-size: 18px;
+  font-weight: 500;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+form {
+  margin: 20px 0;
+}
+
+input[type="text"] {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+button {
+  background-color: #5a3921;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #7a5031;
+}
+
+button[type="submit"] {
+  font-weight: bold;
+}
+
+form[action="/delete"] button {
+  background-color: #d9534f;
+}
+
+form[action="/delete"] button:hover {
+  background-color: #c9302c;
+}
+
+form[action="/update"] button {
+  background-color: #337ab7;
+}
+
+form[action="/update"] button:hover {
+  background-color: #286090;
+}
+
+form[action="/add"] {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+form[action="/add"] input[type="text"] {
+  width: 70%;
+  padding: 10px;
+}
+
+form[action="/add"] button {
+  background-color: #5cb85c;
+  padding: 10px 15px;
+}
+
+form[action="/add"] button:hover {
+  background-color: #449d44;
 }
